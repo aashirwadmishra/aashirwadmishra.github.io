@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aashirwad Mishra Portfolio</title>
+  <link rel="icon" href="">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <a href="#" class="logo">Portfolio</a>
+    <i class="fa-solid fa-bars" id="menu-icon"></i>
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#skills">Skills</a>
+      <a href="#portfolio">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <h3>Hi, Myself</h3>
+      <h1>Aashirwad Mishra</h1>
+      <h3>And I'm a <span id="dynamic-text"></span></h3>
+      <p>I'm currently pursuing a BTech IT degree in my 2nd year, and I'm passionate about expanding my skillset to become a full-stack developer, Digital marketer,Graphic Designer. This portfolio website is a testament to my dedication and serves as a platform to showcase my front-end capabilities.</p>
+      <div class="social-media">
+        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/aashirwadmishra/"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/aashirwadmishra"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+      <a href="https://drive.google.com/file/d/1aGJq2A9JD4JB9luPeZP6raYC2_uEqDtI/view?usp=drive_link" class="btn">Download CV</a>
+    </div>
+    <div class="home-img">
+      <img src="images/aashirwad.jpg" alt="Aashirwad Mishra img">
+    </div>
+  </section>
+
+  <script>
+    const roles = ["Front-End Developer", "Digital Marketer", "Graphic Designer"];
+    let index = 0;
+    function updateRole() {
+      document.getElementById("dynamic-text").textContent = roles[index];
+      index = (index + 1) % roles.length;
+    }
+    setInterval(updateRole, 2000);
+    updateRole();
+  </script>
+</body>
+</html>
+
+  <!--About section-->
+  <section class="about" id="about">
+    <div class="about-img">
+      <img src="images/aashirwadd.jpg" alt="aashirwad img">
+    </div>
+
+    <div class="about-contect">
+      <h2 class="heading">About <span>Me</span> </h2>
+      <!-- <h3>FrontEnd Developer</h3> -->
+      <p>Hi! I'm <span>Aashirwad Mishra</span>, a B.Tech. IT student at Dronacharya Group of Institutions, Greater Noida. A highly motivated and detail-oriented individual with strong communication skills and excellent time management. Passionate about problem-solving and completing tasks efficiently.
+
+        Proficient in HTML, Python, and C, with a keen interest in developing projects and creating innovative solutions. Also, a skilled digital marketing expert and graphic designer, adept at creating engaging content and running successful ad campaigns. A good communicator, always eager to learn and grow in the fields of technology, design, and marketing</p>
+
+    </div>
+  </section>
+
+  <!--Services section-->
+  <section class="services" id="services">
+    <h2 class="heading">My <span>Services</span></h2>
+    <div class="services-container">
+
+      <div class="services-box">
+        <i class="fa-solid fa-globe"></i>
+        <h3>Web Development</h3>
+        <p>I'm a passionate web developer with a knack for crafting beautiful, user-friendly websites that get results.
+          Leveraging my front-end and back-end skills, I partner with you to build impactful web solutions, from landing
+          pages to e-commerce platforms. Let's create a website that elevates your brand and drives success!</p>
+
+      </div>
+
+      <div class="services-box">
+        <i class="fa-solid fa-circle-user"></i>
+        <h3>Digital Marketing </h3>
+        <p>We provide expert digital marketing services designed to enhance your brand’s online presence and drive business growth. Our solutions include social media marketing, where we create and manage targeted ad campaigns on platforms like Facebook, Instagram, and Google to reach the right audience.
+
+        </p>
+      </div>
+
+      <div class="services-box">
+        <i class="fa-solid fa-object-group"></i>
+        <h3>Graphic Desginer </h3>
+        <p> Creative and detail-oriented graphic designer with a passion for visual storytelling. Skilled in Adobe Photoshop, Illustrator, and Canva, specializing in logo design, social media graphics, and branding. Strong understanding of color theory, typography, and layout design. 
+        </p>
+      </div>
+
+      <div class="services-box">
+        <i class="fa-solid fa-palette"></i>
+        <h3>UI/UX Design </h3>
+        <p>I specialize in creating visually compelling and user-centric digital experiences. My approach integrates
+          aesthetics with functionality, ensuring that each interface is not only attractive but also intuitive and
+          seamless for the end-user.Ensuring that each interface is not only attractive but
+          also intuitive and seamless for the end-user.</p>
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <!--Skills section-->
+  <section class="skills" id="skills">
+    <h2 class="heading">My <span>Skills</span></h2>
+    <div class="skills-container">
+      <div class="skills-box">
+        <i class="fa-brands fa-html5"></i>
+        <h3>HTML</h3>
+        <p>Web dev & design pro! Code user-friendly sites & design captivating graphics with HTML & Canva. Boost your
+          brand!</p>
+      </div>
+      <div class="skills-box">
+        <i class="fa-brands fa-css3-alt"></i>
+        <h3>CSS</h3>
+        <p>Web dev & design master! Craft user-friendly websites & stunning graphics with HTML, CSS & Canva. Let's build
+          your brand!</p>
+      </div>
+      <div class="skills-box">
+        <i class="fa-brands fa-js"></i>
+        <h3>JavaScript </h3>
+        <p>Web development expert! Craft user-friendly & interactive websites with HTML, CSS, & JavaScript. Let's
+          elevate your brand online!</p>
+      </div>
+
+      <div class="skills-box">
+        <i class="fa-brands fa-python"></i>
+        <h3>Python</h3>
+        <p>I'm getting started with Python! I understand the basics like variables and loops, and I can write simple
+          programs. I'm eager to learn more and expand my Python skills. </p>
+      </div>
+
+      <div class="skills-box">
+        <i class="fa-solid fa-file-powerpoint"></i>
+        <h3>powerpoint</h3>
+        <p>I'm confident in creating clear and engaging presentations with PowerPoint. I can design slides, incorporate
+          visuals and data effectively, and tailor content to the audience. Let me know if you ever need a hand with a
+          presentation!</p>
+      </div>
+      <div class="skills-box">
+        <i class="fa-solid fa-file-word"></i>
+        <h3>Word</h3>
+        <p>I'm skilled in using Word documents for creating professional reports, letters, and formatted content. I can
+          handle layouts, styles, and formatting for clear communication.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!--portfolio section-->
+  <section class="portfolio" id="portfolio">
+    <h2 class="heading">Latest <span>Projects</span></h2>
+    <div class="portfolio-container">
+      <div class="portfolio-box">
+        <img src="images/PORTFOLIO.jpg" alt="" style="width: 500px; height:210px;">
+        <div class="portfolio-layer">
+          <h4>Portfolio</h4>
+          <p>Built for clarity, my portfolio simplifies presentation of skills.</p>
+          <a href="https://github.com/"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-box">
+        <img src="images/CURRENCY CONVERTER.jpg" alt="" style="width: 500px; height:210px;">
+        <div class="portfolio-layer">
+          <h4>AI Model"Jarvis"</h4>
+          <p> It can perform tasks like voice commands, web searches, automation, and AI-based responses, inspired by Iron Man’s J.A.R.V.I.S. </p>
+          
+        </div>
+      </div>
+
+      <div class="portfolio-box">
+        <img src="images/fra.webp" alt="" style="width: 500px; height:210px;">
+        <div class="portfolio-layer">
+          <h4>Face Recognition Attendance System</h4>
+          <p>
+            A Face Recognition Attendance System is an automated solution that uses facial recognition technology to mark attendance.</p>
+        </div>
+      </div>
+
+      <div class="portfolio-box">
+        <img src="images/STOPWATCH.jpg" alt="" style="width: 500px; height:210px;">
+        <div class="portfolio-layer">
+          <h4>Stop Watch</h4>
+          <p>
+            The application includes essential
+            features such as start, stop, reset, and lap time recording, providing users with a
+            robust tool for various timing need</p>
+        
+        </div>
+      </div>
+
+      <div class="portfolio-box">
+        <img src="images/TICTACTOE.jpg" alt="" style="width: 500px; height:210px;">
+        <div class="portfolio-layer">
+          <h4>TIC-TAC-TOE</h4>
+          <p>Tic-Tac-Toe, also known as Noughts and Crosses or Xs and Os, is a simple and classic two-player game.</p>
+          <a href="https://tictapking.tiiny.site/"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+  </section>
+
+  <!--Contact section-->
+  <section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me <i class="fa-solid fa-message"></i></span></h2>
+    <form action="https://formsubmit.co/chandanmishra5677@gmail.com" method="POST">
+      <div class="input-box">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+      </div>
+
+      <div class="input-box">
+        <input type="tel" name="phone" placeholder="Phone Number">
+        <input type="text" name="subject" placeholder="Email Subject">
+      </div>
+
+      <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+      <input type="hidden" name="_captcha" value="false">
+      <input type="submit" value="Send Message" class="btn">
+    </form>
+</section>
+
+    <div class="social-media" style="text-align: center;">
+      <a href="https://www.instagram.com//"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/aashirwadmishra/"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://github.com/aashirwadmishra"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+
+    </div>
+  </section>
+
+
+
+
+  <!--footer section-->
+  <footer class="footer">
+    <div class="footer-text">
+      <p>Copyright &copy; 2025 by Aashirwad mishra | All Rights Reserved</p>
+    </div>
+
+    <div class="footer-iconTop">
+      <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <!--Main js-->
+  <script src="script.js"></script>
+</body>
+
+</html>
